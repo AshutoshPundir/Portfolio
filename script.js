@@ -159,7 +159,9 @@ function initScrollReveal() {
     '.contact-form-wrap',
     '.footer-top',
     '.footer-bottom',
-    '.metrics-grid'
+    '.metrics-grid',
+    '.other-builds-section',
+    '.other-build-card'
   ];
 
   selectors.forEach(selector => {

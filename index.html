@@ -56,6 +56,9 @@
         <a aria-label="LinkedIn Profile" class="icon-btn social-btn" href="https://www.linkedin.com/in/ashutosh-pundir/" rel="noreferrer" target="_blank">
           <span class="material-symbols-outlined" style="font-size:17px">link</span>
         </a>
+        <a aria-label="X Profile" class="icon-btn social-btn" href="https://x.com/Ashutosh12421" rel="noreferrer" target="_blank">
+          <span class="material-symbols-outlined" style="font-size:17px">alternate_email</span>
+        </a>
         <!-- Theme Toggle -->
         <button aria-label="Toggle Dark/Light Mode" class="icon-btn" id="theme-toggle" type="button">
           <span class="material-symbols-outlined theme-icon-light" style="font-size:17px">light_mode</span>
@@ -93,6 +96,9 @@
           </a>
           <a aria-label="LinkedIn Profile" class="icon-btn" href="https://www.linkedin.com/in/ashutosh-pundir/" rel="noreferrer" target="_blank">
             <span class="material-symbols-outlined" style="font-size:16px">link</span>
+          </a>
+          <a aria-label="X Profile" class="icon-btn" href="https://x.com/Ashutosh12421" rel="noreferrer" target="_blank">
+            <span class="material-symbols-outlined" style="font-size:16px">alternate_email</span>
           </a>
         </div>
       </div>
@@ -139,6 +145,9 @@
                   </a>
                   <a class="coordinates-link" href="https://www.linkedin.com/in/ashutosh-pundir/" rel="noreferrer" target="_blank">
                     <span class="material-symbols-outlined" style="font-size:15px">link</span> LinkedIn
+                  </a>
+                  <a class="coordinates-link" href="https://x.com/Ashutosh12421" rel="noreferrer" target="_blank">
+                    <span class="material-symbols-outlined" style="font-size:15px">alternate_email</span> X
                   </a>
                   <button class="coordinates-link" id="copy-email-btn" onclick="copyEmailToClipboard()" type="button">
                     <span class="material-symbols-outlined" style="font-size:15px">mail</span> <span id="copy-email-text">Copy Email</span>
@@ -199,21 +208,7 @@
                 <p class="about-body">
                   National hackathons have conditioned me to convert conceptual specifications into working, deployed systems under time pressure. Code maintainability, strict typing, semantic DOM trees, and deterministic state transitions are non-negotiable fundamentals of my workflow.
                 </p>
-                <!-- Metrics -->
-                <div class="metrics-grid">
-                  <div class="metric-card">
-                    <span class="metric-value">3+</span>
-                    <span class="metric-label">Production Apps</span>
-                  </div>
-                  <div class="metric-card">
-                    <span class="metric-value">50+</span>
-                    <span class="metric-label">DSA Problems</span>
-                  </div>
-                  <div class="metric-card">
-                    <span class="metric-value">99%</span>
-                    <span class="metric-label">Test &amp; Uptime</span>
-                  </div>
-                </div>
+
               </div>
               <!-- Sidebar Cards -->
               <div class="about-sidebar">
@@ -340,66 +335,68 @@
           <div class="container">
             <div class="section-header">
               <span class="section-label">// 03. FEATURED PROJECTS</span>
-              <h2 class="section-title">Production-Ready Software Builds</h2>
-              <p class="section-desc">End-to-end applications designed, written, and deployed from scratch.</p>
+              <h2 class="section-title">End-to-End Software Projects</h2>
+              <p class="section-desc">Full-stack applications designed, built, and shipped from scratch.</p>
             </div>
-            <div class="projects-list">
+            <div class="projects-list" id="projects-list">
               <!-- PROJECT 1: NAMAH -->
               <article class="project-card project-card-featured">
                 <div class="project-details">
                   <div>
                     <div class="project-badges">
-                      <span class="badge badge-solid">PRODUCTION</span>
-                      <span class="badge">Full-Stack</span>
-                      <span class="badge">WebSockets</span>
+                      <span class="badge badge-outline-primary">Full-Stack</span>
+                      <span class="badge">Real-Time Systems</span>
                     </div>
                     <h3 class="project-title">Namah — Real-Time Communication Platform</h3>
                     <p class="project-desc">
-                      High-throughput real-time communication platform engineered with instant peer-to-peer and room-based messaging, JWT session handling, online presence indicators, and optimistic message delivery queues.
+                      A full-stack real-time communication application with authentication, protected routes, persistent conversations, user profiles, and Socket.IO-based messaging.
                     </p>
                     <div class="feature-checks">
                       <div class="feature-check">
                         <span class="material-symbols-outlined" style="font-size:16px">check</span>
-                        <span>Low-latency Socket.IO sync</span>
+                        <span>Real-time messaging</span>
                       </div>
                       <div class="feature-check">
                         <span class="material-symbols-outlined" style="font-size:16px">check</span>
-                        <span>Persistent MongoDB chat collections</span>
+                        <span>Protected routes</span>
                       </div>
                       <div class="feature-check">
                         <span class="material-symbols-outlined" style="font-size:16px">check</span>
-                        <span>Optimistic state synchronization</span>
+                        <span>User profiles</span>
                       </div>
                       <div class="feature-check">
                         <span class="material-symbols-outlined" style="font-size:16px">check</span>
-                        <span>JWT session encryption</span>
+                        <span>JWT authentication</span>
+                      </div>
+                      <div class="feature-check">
+                        <span class="material-symbols-outlined" style="font-size:16px">check</span>
+                        <span>MongoDB persistence</span>
+                      </div>
+                      <div class="feature-check">
+                        <span class="material-symbols-outlined" style="font-size:16px">check</span>
+                        <span>Socket.IO communication</span>
                       </div>
                     </div>
                     <div class="tag-list">
                       <span class="tag">React</span>
                       <span class="tag">Node.js</span>
-                      <span class="tag">Express</span>
+                      <span class="tag">Express.js</span>
                       <span class="tag">MongoDB</span>
                       <span class="tag tag-primary">Socket.IO</span>
                       <span class="tag">Tailwind CSS</span>
                     </div>
                   </div>
                   <div class="project-actions">
-                    <a class="project-link project-link-primary" href="#">
-                      <span>Live Deployment</span>
-                      <span class="material-symbols-outlined" style="font-size:15px">north_east</span>
-                    </a>
-                    <a class="project-link" href="#">
+                    <a class="project-link" href="https://github.com/AshutoshPundir/Namah" rel="noreferrer" target="_blank">
                       <span>Source Code</span>
                       <span class="material-symbols-outlined" style="font-size:15px">north_east</span>
                     </a>
-                    <span class="project-status">Active Production Build</span>
                   </div>
                 </div>
-                <!-- Terminal Console -->
+                <!-- Chat Interface Preview -->
                 <div class="project-terminal">
                   <div class="terminal-header">
-                    <span>namah.socket // cluster-0</span>
+                    <span>Sample UI Preview</span>
                     <span class="pulse-dot"></span>
                   </div>
                   <div class="terminal-body">
@@ -407,35 +404,45 @@
                       <div class="chat-avatar">AP</div>
                       <div class="chat-bubble">
                         <div class="chat-meta">
-                          <span>Ashutosh (You)</span>
-                          <span>14:02:18</span>
+                          <span>Ashutosh</span>
+                          <span>14:32</span>
                         </div>
-                        <span class="chat-text-self">Heartbeat ping validated: 14ms loop. 0 dropped packets.</span>
+                        <span class="chat-text-self">Hey, are you available for a quick sync?</span>
                       </div>
                     </div>
                     <div class="chat-message">
-                      <div class="chat-avatar chat-avatar-peer">SR</div>
+                      <div class="chat-avatar chat-avatar-peer">RK</div>
                       <div class="chat-bubble">
                         <div class="chat-meta">
-                          <span>Peer_Dev</span>
-                          <span>14:02:35</span>
+                          <span>Rahul · <span style="color:#34d399">online</span></span>
+                          <span>14:33</span>
                         </div>
-                        <span class="chat-text-peer">Acknowledged. Token refresh validated under payload spike.</span>
+                        <span class="chat-text-peer">Sure, joining the channel now.</span>
+                      </div>
+                    </div>
+                    <div class="chat-message">
+                      <div class="chat-avatar">AP</div>
+                      <div class="chat-bubble">
+                        <div class="chat-meta">
+                          <span>Ashutosh</span>
+                          <span>14:34</span>
+                        </div>
+                        <span class="chat-text-self">Great, let's discuss the API changes.</span>
                       </div>
                     </div>
                     <div class="chat-input">
-                      <span>&gt; broadcast socket message...</span>
+                      <span>&gt; Type a message...</span>
                       <span class="material-symbols-outlined" style="font-size:15px;color:var(--text-primary)">send</span>
                     </div>
                   </div>
                   <div class="terminal-footer">
-                    <span>INDEXED CHATS: 140k+</span>
-                    <span class="terminal-status-ok">RUNTIME: NORMAL</span>
+                    <span>CONVERSATIONS: 3 active</span>
+                    <span class="terminal-status-ok">CONNECTED</span>
                   </div>
                 </div>
               </article>
 
-              <!-- Two Column: AgentLens & DevShelf -->
+              <!-- Two Column: AgentLens & Construction -->
               <div class="projects-duo">
                 <!-- PROJECT 2: AGENTLENS -->
                 <article class="project-card project-card-compact">
@@ -443,57 +450,51 @@
                     <div class="project-badges">
                       <span class="badge badge-outline-primary">AI Systems</span>
                       <span class="badge">Analytics</span>
-                      <span class="badge">Observability</span>
                     </div>
-                    <h3 class="project-title-sm">AgentLens — Token &amp; API Cost Observability</h3>
+                    <h3 class="project-title-sm">AgentLens — AI Tool &amp; Usage Analytics Platform</h3>
                     <p class="project-desc">
-                      Developer analytics dashboard monitoring token throughput across LLM providers, surfacing cost drift anomalies, and evaluating prompt token density.
+                      An AI tooling platform focused on comparing AI tools, visualizing usage, analyzing spending patterns, and providing organizational insights.
                     </p>
-                    <!-- Chart -->
+                    <!-- Dashboard Preview -->
                     <div class="chart-panel">
                       <div class="chart-header">
-                        <span>TOKEN COST DISTRIBUTION</span>
-                        <span class="chart-highlight">-19.2% OPTIMIZED</span>
+                        <span>USAGE OVERVIEW</span>
+                        <span class="chart-highlight">TOOL COMPARISON</span>
                       </div>
-                      <svg aria-label="Token usage graph" class="chart-svg" viewBox="0 0 320 50">
-                        <rect class="bar-dim" height="20" width="20" x="10" y="30"></rect>
-                        <rect class="bar-dim" height="30" width="20" x="40" y="20"></rect>
-                        <rect class="bar-dim" height="35" width="20" x="70" y="15"></rect>
-                        <rect class="bar-mid" height="45" width="20" x="100" y="5"></rect>
-                        <rect class="bar-dim" height="28" width="20" x="130" y="22"></rect>
-                        <rect class="bar-dim" height="24" width="20" x="160" y="26"></rect>
+                      <svg aria-label="Usage distribution chart" class="chart-svg" viewBox="0 0 320 50">
+                        <rect class="bar-dim" height="22" width="20" x="10" y="28"></rect>
+                        <rect class="bar-dim" height="28" width="20" x="40" y="22"></rect>
+                        <rect class="bar-mid" height="36" width="20" x="70" y="14"></rect>
+                        <rect class="bar-bright" height="42" width="20" x="100" y="8"></rect>
+                        <rect class="bar-dim" height="20" width="20" x="130" y="30"></rect>
+                        <rect class="bar-mid" height="32" width="20" x="160" y="18"></rect>
                         <rect class="bar-bright" height="38" width="20" x="190" y="12"></rect>
-                        <rect class="bar-max" height="42" width="20" x="220" y="8"></rect>
-                        <rect class="bar-max" height="40" width="20" x="250" y="10"></rect>
+                        <rect class="bar-max" height="44" width="20" x="220" y="6"></rect>
+                        <rect class="bar-dim" height="26" width="20" x="250" y="24"></rect>
                         <rect class="bar-max" height="46" width="20" x="280" y="4"></rect>
                       </svg>
                       <div class="chart-footer">
-                        <span>WK 01</span>
-                        <span>SPIKE DETECTED</span>
-                        <span>NORMALIZED</span>
+                        <span>COST ANALYSIS</span>
+                        <span>RECOMMENDATIONS</span>
+                        <span>SAMPLE DATA</span>
                       </div>
                     </div>
                     <div class="tag-list">
                       <span class="tag">React</span>
                       <span class="tag">Node.js</span>
-                      <span class="tag">Express</span>
+                      <span class="tag">Express.js</span>
                       <span class="tag">MongoDB</span>
                     </div>
                   </div>
                   <div class="project-actions">
-                    <a class="project-link project-link-primary" href="#">
-                      <span>Live Demo</span>
+                    <a class="project-link" href="https://github.com/AshutoshPundir/Agent_lens" rel="noreferrer" target="_blank">
+                      <span>Source Code</span>
                       <span class="material-symbols-outlined" style="font-size:15px">north_east</span>
                     </a>
-                    <a class="project-link" href="#">
-                      <span>GitHub</span>
-                      <span class="material-symbols-outlined" style="font-size:15px">north_east</span>
-                    </a>
-                    <span class="project-status">MIT License</span>
                   </div>
                 </article>
 
-                <!-- PROJECT 3: HACKATHON -->
+                <!-- PROJECT 3: CONSTRUCTION SCHEDULER -->
                 <article class="project-card project-card-compact">
                   <div>
                     <div class="project-badges">
@@ -503,42 +504,134 @@
                     </div>
                     <h3 class="project-title-sm">AI-Assisted Construction Project Scheduling &amp; Management System</h3>
                     <p class="project-desc">
-                      A hackathon project focused on improving construction project scheduling through digital schedule management, resource planning, cost analysis and integration with real-world Primavera project data. Compatible with Primavera workflows for activities, dependencies, and resource constraints.
+                      A construction project scheduling platform focused on activity planning, schedule management, resource planning, cost analysis, and working with real Primavera P6 schedule data.
                     </p>
-                    <!-- Code Panel -->
-                    <div class="code-panel">
-                      <div class="code-header">
-                        <span>primavera_parser.ts // schedule_matrix</span>
-                        <span class="code-status">CRITICAL PATH ACTIVE</span>
+                    <!-- Schedule Table Preview -->
+                    <div class="schedule-panel">
+                      <div class="schedule-header">
+                        <span>Sample Schedule Data</span>
                       </div>
-                      <div class="code-body">
-                        <div><span class="code-keyword">interface</span> <span class="code-white">TaskSchedule</span> {</div>
-                        <div>  wbs_id: <span class="code-white">"WBS-C04"</span>, duration: <span class="code-white">18</span>, p6_compat: <span class="code-keyword">true</span>;</div>
-                        <div>  dependencies: [<span class="code-white">"SITE-EXC"</span>, <span class="code-white">"FOUNDATION-POUR"</span>];</div>
-                        <div>  critical_path: <span class="code-keyword">analyzeFloat</span>(task, resourcePool);</div>
-                        <div>}</div>
+                      <div class="schedule-table-wrap">
+                        <table class="schedule-table">
+                          <thead>
+                            <tr>
+                              <th>ID</th>
+                              <th>Activity</th>
+                              <th>Duration</th>
+                              <th>Pred.</th>
+                              <th>Status</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>ACT-101</td>
+                              <td>Site Excavation &amp; Grading</td>
+                              <td>14d</td>
+                              <td>—</td>
+                              <td><span class="status-planned">Planned</span></td>
+                            </tr>
+                            <tr>
+                              <td>ACT-102</td>
+                              <td>Substructure Foundation Pour</td>
+                              <td>21d</td>
+                              <td>ACT-101</td>
+                              <td><span class="status-progress">In Progress</span></td>
+                            </tr>
+                            <tr>
+                              <td>ACT-103</td>
+                              <td>Structural Frame</td>
+                              <td>35d</td>
+                              <td>ACT-102</td>
+                              <td><span class="status-planned">Planned</span></td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </div>
                     <div class="tag-list">
                       <span class="tag">React</span>
                       <span class="tag">Node.js</span>
-                      <span class="tag">Express</span>
+                      <span class="tag">Express.js</span>
                       <span class="tag">Primavera XER/XML</span>
-                      <span class="tag">Scheduling Engine</span>
                     </div>
                   </div>
                   <div class="project-actions">
-                    <a class="project-link project-link-primary" href="#">
-                      <span>Case Study</span>
+                    <a class="project-link" href="https://github.com/VimalBisht2021/sih26122_repo" rel="noreferrer" target="_blank">
+                      <span>Source Code</span>
                       <span class="material-symbols-outlined" style="font-size:15px">north_east</span>
                     </a>
-                    <a class="project-link" href="#">
-                      <span>GitHub</span>
-                      <span class="material-symbols-outlined" style="font-size:15px">north_east</span>
-                    </a>
-                    <span class="project-status">Hackathon Project</span>
                   </div>
                 </article>
+              </div>
+            </div>
+
+            <!-- OTHER BUILDS -->
+            <div class="other-builds-section">
+              <div class="other-builds-header">
+                <h3 class="other-builds-title">Other Builds &amp; Explorations</h3>
+                <p class="other-builds-desc">Utility applications, client interfaces, and foundational full-stack architecture.</p>
+              </div>
+              <div class="other-builds-grid">
+                <!-- 01 Paytm Clone -->
+                <div class="other-build-card">
+                  <div class="other-build-number">[01]</div>
+                  <h4 class="other-build-name">Paytm Clone</h4>
+                  <p class="other-build-desc">Full-stack mock wallet application featuring user balance transfers, transactional consistency, and input validation with Zod.</p>
+                  <div class="tag-list">
+                    <span class="tag">React</span>
+                    <span class="tag">Node.js</span>
+                    <span class="tag">Express</span>
+                    <span class="tag">MongoDB</span>
+                    <span class="tag">Zod</span>
+                    <span class="tag">JWT</span>
+                  </div>
+                </div>
+                <!-- 02 StudySync -->
+                <div class="other-build-card">
+                  <div class="other-build-number">[02]</div>
+                  <h4 class="other-build-name">StudySync</h4>
+                  <p class="other-build-desc">Responsive educational landing page exploring clean typography, semantic layout, and modern CSS grid structures.</p>
+                  <div class="tag-list">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">Responsive Layout</span>
+                  </div>
+                </div>
+                <!-- 03 Blog Website -->
+                <div class="other-build-card">
+                  <div class="other-build-number">[03]</div>
+                  <h4 class="other-build-name">Blog Website</h4>
+                  <p class="other-build-desc">Content-first publishing template integrating dynamic public photography feeds and readable long-form editorial layouts.</p>
+                  <div class="tag-list">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">Public Image API</span>
+                  </div>
+                </div>
+                <!-- 04 Weather App -->
+                <div class="other-build-card">
+                  <div class="other-build-number">[04]</div>
+                  <h4 class="other-build-name">Weather App</h4>
+                  <p class="other-build-desc">Real-time weather utility querying the OpenWeather API with dynamic location search and multi-day forecast views.</p>
+                  <div class="tag-list">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">OpenWeather API</span>
+                  </div>
+                </div>
+                <!-- 05 Todo App -->
+                <div class="other-build-card">
+                  <div class="other-build-number">[05]</div>
+                  <h4 class="other-build-name">Todo App</h4>
+                  <p class="other-build-desc">Lightweight task management utility featuring client-side persistence, filter states, and responsive DOM updates.</p>
+                  <div class="tag-list">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Local Storage</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -679,6 +772,13 @@
                       </span>
                       <span class="material-symbols-outlined" style="font-size:15px;color:var(--text-muted)">north_east</span>
                     </a>
+                    <a class="contact-link-item" href="https://x.com/Ashutosh12421" rel="noreferrer" target="_blank">
+                      <span class="contact-link-left">
+                        <span class="material-symbols-outlined" style="font-size:17px">alternate_email</span>
+                        <span>x.com/Ashutosh12421</span>
+                      </span>
+                      <span class="material-symbols-outlined" style="font-size:15px;color:var(--text-muted)">north_east</span>
+                    </a>
                   </div>
                   <div class="contact-meta">
                     <div>
@@ -760,6 +860,7 @@
             <div class="footer-links">
               <a href="https://github.com/AshutoshPundir" rel="noreferrer" target="_blank">GitHub</a>
               <a href="https://www.linkedin.com/in/ashutosh-pundir/" rel="noreferrer" target="_blank">LinkedIn</a>
+              <a href="https://x.com/Ashutosh12421" rel="noreferrer" target="_blank">X</a>
               <a href="mailto:pundirashu2491@gmail.com">Email</a>
               <a href="Ashutosh_Pundir_Profile_.pdf" download>Resume</a>
             </div>
